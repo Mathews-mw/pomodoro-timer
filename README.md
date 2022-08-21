@@ -1,6 +1,5 @@
-Timer para estudo POMODORO
-
-=================
+## Timer para estudo POMODORO
+=============================
 
 ## Em andamento
 
