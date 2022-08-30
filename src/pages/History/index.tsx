@@ -28,7 +28,7 @@ export function History() {
                 <tr key={cycle.id}>
                   <td>{cycle.task}</td>
                   <td>{cycle.minutesAmount} minutos</td>
-                  <td><time title={format(cycle.startDate, "'Iniciado em' d 'de' LLL 'às' HH:mm'hrs'", {locale: ptBR})} dateTime={cycle.startDate.toISOString()}>{formatDistanceToNow(cycle.startDate, {addSuffix: true, locale: ptBR})}</time></td>
+                  <td><time title={format(new Date(cycle.startDate), "'Iniciado em' d 'de' LLL 'às' HH:mm'hrs'", {locale: ptBR})} dateTime={new Date(cycle.startDate).toISOString()}>{formatDistanceToNow(new Date(cycle.startDate), {addSuffix: true, locale: ptBR})}</time></td>
                   <td>
                     {cycle.fisinhedDate && (<Status statusColor="green">Concluído</Status>)}
                     {cycle.interrupedDate && (<Status statusColor="red">Interrompido</Status>)}
